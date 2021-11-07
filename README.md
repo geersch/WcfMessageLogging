@@ -19,8 +19,11 @@ public interface IHelloWorld
     [OperationContract]
     string Hello(string name);
 }
+```
+
 To finish the service rename the Service1.cs file to HelloWorld.cs and create a service implementation as follows:
 
+```csharp
 public class HelloWorld : IHelloWorld
 {
     public string Hello(string name)
